@@ -27,7 +27,7 @@ jobs:
 
       - name: Update README
         run: |
-          python scrape_84xo.py
+          python IP.py
 
       - name: Deploy
         run: |
