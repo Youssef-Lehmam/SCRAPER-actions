@@ -7,6 +7,6 @@ if __name__ == "__main__":
         ip_info = response.json()
         ip_address = ip_info["ip"]
         readme = Path("README.md").read_text(encoding="utf8")
-        new_readme = f"{ip_address}\n\n\n"
+        new_readme = f"{ip_address}\n"
         with open("README.md", "w+") as f:
             f.write(new_readme)
