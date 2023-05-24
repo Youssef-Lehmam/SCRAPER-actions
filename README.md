@@ -1,2 +1,0 @@
-# commit-actions
- Simple scraper
