@@ -11,8 +11,11 @@ if __name__ == "__main__":
         readme_path = Path("README.md")
         readme_content = readme_path.read_text(encoding="utf8")
 
-        # Append IP address as a new line
-        new_readme = f"{readme_content.strip()}\n{ip_address}\n"
+        # Create a comment line with the IP address
+        comment_line = f"Added IP: {ip_address}"
+
+        # Append the comment line as a new line
+        new_readme = f"{readme_content.strip()}\n{comment_line}\n"
 
         # Write updated content to README.md
         with open("README.md", "w+") as f:
